@@ -1,0 +1,17 @@
+/*FONT VARIABLES*/
+
+$font-standard: "Lato", sans-serif;
+$font-decorative: "Cormorant Upright", serif;
+
+/*COLOR PALETTE VARIABLES*/
+// For the color palette I chose to use the standard CSS variables in order to dynamically
+//change theme via Javascript
+
+:root {
+  --bg-dark: rgba(0, 0, 0, 1);
+  --bg-custom: rgba(69, 17, 72, 1);
+  --accent-custom: rgba(231, 59, 239, 1);
+
+  --text-white: rgba(255, 255, 255, 1);
+  --text-custom: rgba(196, 178, 178, 1);
+}

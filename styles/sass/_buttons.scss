@@ -1,0 +1,52 @@
+@import "variables";
+
+.custom-btn {
+  color: var(--text-white);
+
+  font-family: $font-standard;
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 0.15rem;
+
+  transition: all 0.3s linear;
+
+  &:hover {
+    color: var(--text-white);
+    animation: hover 0.8s linear infinite normal forwards;
+  }
+
+  &.active {
+    border: 1.5px solid var(--accent-custom);
+    color: var(--accent-custom);
+  }
+
+  &.active:hover {
+    color: var(--text-white);
+  }
+
+  &:focus {
+    color: var(--text-white);
+    box-shadow: none;
+  }
+}
+
+/*ANIMATIONS ON HOVER*/
+
+@keyframes hover {
+  0% {
+    color: var(--text-white);
+    border-bottom: 1.5px solid var(--accent-custom);
+  }
+  25% {
+    border-right: 1.5px solid var(--accent-custom);
+  }
+  50% {
+    border-top: 1.5px solid var(--accent-custom);
+  }
+  75% {
+    border-left: 1.5px solid var(--accent-custom);
+  }
+  100% {
+    background-color: var(--accent-custom);
+  }
+}
