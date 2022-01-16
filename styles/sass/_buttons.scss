@@ -12,7 +12,7 @@
 
   &:hover {
     color: var(--text-white);
-    animation: hover 0.8s linear infinite normal forwards;
+    animation: btn-hover 0.8s linear infinite normal forwards;
   }
 
   &.active {
@@ -30,9 +30,9 @@
   }
 }
 
-/*ANIMATIONS ON HOVER*/
+/*ANIMATIONS ON BTN HOVER*/
 
-@keyframes hover {
+@keyframes btn-hover {
   0% {
     color: var(--text-white);
     border-bottom: 1.5px solid var(--accent-custom);
