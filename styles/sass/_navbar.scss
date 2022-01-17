@@ -1,0 +1,138 @@
+/*NAVBAR*/
+
+header {
+  padding: 1rem 0;
+
+  @include lg {
+    padding: 0;
+  }
+}
+
+nav {
+  //LOGO
+  .custom-logo {
+    font-family: $font-decorative;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    color: var(--text-white);
+    margin: 0;
+    padding: 0;
+
+    span {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.3rem;
+      border-radius: 5px;
+      background-color: var(--accent-custom);
+      font-size: 1.7rem;
+    }
+  }
+
+  //CUSTOM TOGGLER ICON
+  .custom-toggler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 100%;
+    padding: 0.8rem;
+    box-shadow: 0 0 10px var(--accent-custom);
+
+    &.open {
+      > span:first-child {
+        transform: translateY(8px) rotate(132deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: translateY(-7.8px) rotate(-132deg);
+      }
+    }
+
+    @include lg {
+      display: none;
+    }
+
+    span {
+      width: 1.5rem;
+      height: 0.3rem;
+      opacity: 0.6;
+      border-radius: 10px;
+      background-color: var(--accent-custom);
+      transition: all 0.2s linear;
+
+      &:not(:nth-child(1)) {
+        margin-top: 0.2rem;
+      }
+    }
+
+    &:focus {
+      background: var(--accent-custom);
+      background: radial-gradient(
+        circle,
+        var(--accent-custom) 10%,
+        transparent 96%
+      );
+
+      span {
+        background-color: var(--text-white);
+      }
+    }
+  }
+  //MENU
+
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: calc(100vh - 144.35px);
+    left: 0;
+
+    @include lg {
+      height: auto;
+
+      margin-left: auto;
+      justify-content: flex-end;
+      padding: 0;
+    }
+  }
+
+  .nav-item {
+    margin-top: 2rem;
+    border-bottom: 2px solid var(--accent-custom);
+
+    @include lg {
+      margin-left: 1.5rem;
+      margin-top: 0;
+
+      border-bottom: none;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: none;
+    }
+  }
+
+  .social-contact {
+    color: var(--accent-custom);
+
+    i {
+      padding: 0.5rem;
+      cursor: pointer;
+      transition: all 0.2s linear;
+
+      &:hover,
+      &:active {
+        color: var(--text-white);
+      }
+    }
+  }
+}

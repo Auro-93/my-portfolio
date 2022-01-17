@@ -5,28 +5,24 @@
 
   font-family: $font-standard;
   font-weight: 300;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   letter-spacing: 0.15rem;
 
   transition: all 0.3s linear;
 
-  &:hover {
+  &:hover,
+  &:active {
     color: var(--text-white);
-    animation: btn-hover 0.8s linear infinite normal forwards;
-  }
-
-  &.active {
-    border: 1.5px solid var(--accent-custom);
-    color: var(--accent-custom);
-  }
-
-  &.active:hover {
-    color: var(--text-white);
+    animation: btn-hover 0.8s linear normal forwards;
   }
 
   &:focus {
     color: var(--text-white);
     box-shadow: none;
+  }
+
+  &.active:hover {
+    color: var(--text-white);
   }
 }
 
@@ -47,6 +43,7 @@
     border-left: 1.5px solid var(--accent-custom);
   }
   100% {
+    box-shadow: 0 0 50px var(--accent-custom);
     background-color: var(--accent-custom);
   }
 }
