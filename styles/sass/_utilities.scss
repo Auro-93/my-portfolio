@@ -75,7 +75,7 @@ p {
 //For Firefox
 
 html {
-  scrollbar-color: var(--accent-custom) white; /* thumb and track color */
+  scrollbar-color: var(--accent-custom) var(--text-white); /* thumb and track color */
   scrollbar-width: thin;
 }
 

@@ -5,7 +5,7 @@
 
 .bg-photo {
   @include lg {
-    background-image: url("../../assets/images/pink-photo.png");
+    background-image: url("../../assets/images/photo.png");
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: 5% 40%;
@@ -63,7 +63,6 @@
 
   h1 {
     display: inline-block;
-    font-weight: 300;
     color: var(--text-white);
     margin-bottom: 2rem;
     position: relative;
@@ -71,17 +70,6 @@
 
     @include lg {
       text-align: left;
-    }
-
-    .underline-anim {
-      display: block;
-      position: absolute;
-      background-color: var(--accent-custom);
-      bottom: -0.5rem;
-      left: 0;
-      width: 10%;
-      height: 0.1rem;
-      border-radius: 5px;
     }
   }
 
@@ -154,35 +142,5 @@
       rgba(39, 39, 39, 0.3) 80%,
       rgba(0, 0, 0, 0) 96%
     );
-  }
-}
-
-/*HERO TEXT H1 UNDERLINE GROWTH ANIMATION */
-
-@keyframes h1-underline-growth {
-  0% {
-    width: 15%;
-  }
-  10% {
-  }
-  25% {
-    width: 20%;
-  }
-  30% {
-  }
-  50% {
-    width: 30%;
-  }
-  60% {
-    width: 40%;
-  }
-  75% {
-    width: 60%;
-  }
-  90% {
-    width: 80%;
-  }
-  100% {
-    width: 100%;
   }
 }

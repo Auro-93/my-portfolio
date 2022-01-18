@@ -1,0 +1,70 @@
+@import "variables";
+
+#skills {
+  h1 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5rem;
+
+    &:hover {
+      .underline-anim {
+        animation: h1-underline-growth 0.2s linear forwards;
+      }
+    }
+  }
+
+  .card {
+    position: relative;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    height: 320px;
+    transition: all 0.1s linear;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    .card-img {
+      padding: 1rem 0;
+      background-color: var(--light-custom);
+
+      img {
+        margin: 0 0.3rem;
+        border-radius: 50%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 0.5rem;
+      }
+    }
+
+    .card-body {
+      .card-title {
+        color: var(--bg-custom);
+        font-weight: 500;
+        margin-bottom: 1rem;
+        padding: 1rem;
+      }
+    }
+
+    .card-footer {
+      background-color: transparent;
+      border: none;
+      color: black;
+
+      a {
+        display: block;
+        background-color: var(--light-custom);
+        color: var(--bg-custom);
+        font-size: 0.7rem;
+        padding: 0.2rem 1rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}
