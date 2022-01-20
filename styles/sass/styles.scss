@@ -5,6 +5,7 @@
 @import "buttons";
 @import "about-me";
 @import "skills";
+@import "projects";
 
 /*GLOBAL STYLES*/
 
@@ -22,7 +23,7 @@ html {
 body {
   font-family: $font-standard;
   letter-spacing: 0.2rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 2.1rem;
   overflow-x: hidden;
 
@@ -63,9 +64,9 @@ h1 {
 
 /*CUSTOM COLOR BG SECTIONS*/
 
-.custom-color-section {
+.custom-color-section-1 {
   min-height: 100vh;
-  padding: 5rem;
+  padding: 8rem 5rem 1rem;
   background: var(--accent-custom);
   background: linear-gradient(
     240deg,
@@ -76,6 +77,15 @@ h1 {
   h1 {
     color: var(--bg-custom);
   }
+}
+
+.custom-color-section-2 {
+  @extend .custom-color-section-1;
+  background: linear-gradient(
+    60deg,
+    var(--accent-custom),
+    var(--text-custom) 20%
+  );
 }
 
 /*HERO TEXT H1 UNDERLINE GROWTH ANIMATION */

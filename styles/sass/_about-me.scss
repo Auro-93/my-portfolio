@@ -77,8 +77,8 @@
     word-break: keep-all;
     text-align: justify;
     font-weight: 300;
-    color: var(--text-white);
-    opacity: 0.6;
+    color: var(--text-custom);
+    line-height: 3rem;
 
     strong {
       color: var(--accent-custom);

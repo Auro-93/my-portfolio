@@ -57,7 +57,7 @@ p {
 /* CUSTOM SCROLLBAR */
 /* width */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 
 /* Track */
@@ -69,7 +69,7 @@ p {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--accent-custom);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 //For Firefox
