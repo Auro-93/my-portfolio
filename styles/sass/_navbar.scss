@@ -120,19 +120,4 @@ nav {
       border-bottom: none;
     }
   }
-
-  .social-contact {
-    color: var(--accent-custom);
-
-    i {
-      padding: 0.5rem;
-      cursor: pointer;
-      transition: all 0.2s linear;
-
-      &:hover,
-      &:active {
-        color: var(--text-white);
-      }
-    }
-  }
 }

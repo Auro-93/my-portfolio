@@ -1,0 +1,77 @@
+@import "variables";
+@import "buttons";
+
+#contacts {
+  h1 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+
+    &:hover {
+      .underline-anim {
+        animation: h1-underline-growth 0.2s linear forwards;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+
+    strong {
+      color: var(--accent-custom);
+    }
+  }
+
+  .contact-tab-container {
+    margin: 6rem 0;
+    border: 2px solid var(--accent-custom);
+    box-shadow: 0 0 30px var(--accent-custom);
+
+    ul {
+      padding: 0;
+
+      li {
+        padding: 1.5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        @include lg {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        address {
+          padding: 0;
+          margin: 0;
+        }
+
+        i {
+          color: var(--accent-custom);
+          padding: 0.5rem;
+        }
+        a {
+          color: var(--text-custom);
+          display: block;
+          padding: 1rem;
+          border-radius: 50%;
+          transition: all 0.2s linear;
+
+          @include lg {
+            margin-right: 5rem;
+          }
+
+          &:hover,
+          &:active {
+            color: var(--text-white);
+
+            box-shadow: 0 0 30px var(--accent-custom);
+          }
+        }
+      }
+    }
+  }
+}

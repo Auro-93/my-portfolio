@@ -6,6 +6,7 @@
 @import "about-me";
 @import "skills";
 @import "projects";
+@import "contacts";
 
 /*GLOBAL STYLES*/
 
@@ -36,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 h1 {
   font-family: $font-decorative;
   font-size: 2.8rem;
@@ -60,6 +65,10 @@ h1 {
   min-height: 100vh;
   background-color: var(--bg-dark);
   position: relative;
+
+  p {
+    color: var(--text-custom);
+  }
 }
 
 /*CUSTOM COLOR BG SECTIONS*/
@@ -86,6 +95,7 @@ h1 {
     var(--accent-custom),
     var(--text-custom) 20%
   );
+  padding-bottom: 7rem;
 }
 
 /*HERO TEXT H1 UNDERLINE GROWTH ANIMATION */
