@@ -79,23 +79,6 @@ html {
   scrollbar-width: thin;
 }
 
-//CURSOR GLOW STYLE ON MOUSEMOVE*/
-
-.cursor-glow {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 100%;
-  position: absolute;
-  background: var(--accent-custom);
-  background: radial-gradient(
-    circle,
-    var(--accent-custom) 10%,
-    transparent 96%
-  );
-  opacity: 0.4;
-  pointer-events: none;
-}
-
 //CHANGE COLOR OF THE HIGHLIGHTED TEXT
 
 ::selection {

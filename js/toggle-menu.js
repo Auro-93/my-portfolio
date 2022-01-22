@@ -3,7 +3,6 @@
 export const toggleMenu = () => {
   let customToggler = document.querySelector(".custom-toggler");
   let navLink = document.querySelectorAll(".nav-link");
-  let navbarCollapse = document.querySelector(".navbar-collapse");
 
   customToggler.addEventListener("click", () => {
     //TURN X ICON TO HAMBURGER ICON

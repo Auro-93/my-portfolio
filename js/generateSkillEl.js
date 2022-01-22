@@ -7,11 +7,18 @@ export const generateSkills = () => {
   if (skills.length > 0) {
     skills.map((skill) => {
       html += `<div class="col-12 col-lg-6 col-xl-4">
-        <div class="card">
+        <div 
+          class="card"  
+          data-aos="fade-up"
+          data-aos-offset="120"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out-sine"
+          data-aos-once="false"
+        >
           <div class="card-img d-flex justify-content-center">
           ${skill.icons.map(
             (icon) =>
-              `<img src= ${icon.path} width = 40 class="img-thumbnail" alt=${icon.alt}>`
+              `<img src= ${icon.path} width = 50 class="img-thumbnail" alt=${icon.alt}>`
           )}
             
           </div>

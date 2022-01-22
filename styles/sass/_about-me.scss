@@ -17,6 +17,10 @@
 .about-me-text-container {
   min-height: calc(100vh - 58px);
 
+  @include lg {
+    padding: 3rem 0;
+  }
+
   .hero-text {
     padding: 3rem 1rem;
     margin: 3rem 0 0 0;
@@ -75,7 +79,8 @@
 
   p {
     word-break: keep-all;
-    text-align: justify;
+    text-align: center;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--text-custom);
     line-height: 3rem;

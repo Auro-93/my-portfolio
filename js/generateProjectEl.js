@@ -6,7 +6,14 @@ export const generateProjects = () => {
 
   if (projects.length > 0) {
     projects.map((project) => {
-      html += `<div class = "project d-flex flex-column flex-lg-row">
+      html += `<div 
+        class = "project d-flex flex-column flex-lg-row"
+        data-aos="fade-up"
+        data-aos-offset="120"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out-sine"
+        data-aos-once="false"
+        >
           <div class="img-container d-flex align-items-center justify-content-center">
             <img src= ${project.image} class="img-fluid" alt= ${project.imgAlt}>
             <div class="project-layer">

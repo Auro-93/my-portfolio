@@ -1,0 +1,12 @@
+@import "variables";
+
+footer {
+  background-color: var(--bg-custom);
+  color: var(--text-white);
+  border-top: 0.1px solid var(--bg-custom);
+
+  @include lg {
+    background-color: var(--bg-dark);
+    color: var(--accent-custom);
+  }
+}
