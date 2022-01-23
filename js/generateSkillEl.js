@@ -13,7 +13,7 @@ export const generateSkills = () => {
           data-aos-offset="120"
           data-aos-duration="600"
           data-aos-easing="ease-in-out-sine"
-          data-aos-once="true"
+          data-aos-once="false"
         >
           <div class="card-img d-flex justify-content-center">
           ${skill.icons.map(
