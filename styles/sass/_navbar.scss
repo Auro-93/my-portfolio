@@ -38,18 +38,18 @@ nav {
     align-items: center;
     background-color: transparent;
     border-radius: 100%;
-    padding: 0.8rem;
+    padding: 0.9rem;
     box-shadow: 0 0 10px var(--accent-custom);
 
     &.open {
       > span:first-child {
-        transform: translateY(8px) rotate(132deg);
+        transform: translateY(7.5px) rotate(132deg);
       }
       > span:nth-child(2) {
         opacity: 0;
       }
       > span:last-child {
-        transform: translateY(-6px) rotate(-132deg);
+        transform: translateY(-5.5px) rotate(-132deg);
       }
     }
 

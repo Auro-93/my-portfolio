@@ -20,8 +20,8 @@
 html {
   font-size: 13px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-
 body {
   font-family: $font-standard;
   letter-spacing: 0.2rem;
