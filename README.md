@@ -20,16 +20,18 @@ showing passions, skills and projects.
 
 ### Screenshot
 
-A desktop view of the website (neon pink theme)
+A desktop view of the website (neon pink theme):
+
 ![](assets/screenshots/desktop-pink.jpg)
 
-A desktop view of the website (neon cyan theme)
+A desktop view of the website (neon cyan theme):
+
 ![](assets/screenshots/desktop-cyan.jpg)
 
 ### Links to website
 
-- Github-Pages URL: [Add live site URL here](https://auro-93.github.io/my-portfolio/)
-- Netlify URL: [Add live site URL here](https://aurodev-web-developer-portfolio.netlify.app/)
+- Github-Pages URL: [https://auro-93.github.io/my-portfolio/]
+- Netlify URL: [https://aurodev-web-developer-portfolio.netlify.app/]
 
 ## My process
 
