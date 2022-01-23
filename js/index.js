@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   codeIconAnim();
   touchProjectEffect();
 
-  //SCROLL ANIMATIONS CONFIG
+  //AOS SCROLL ANIMATIONS CONFIG
   AOS.init({
     disable: false,
     startEvent: "DOMContentLoaded",

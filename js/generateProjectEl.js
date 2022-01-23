@@ -12,7 +12,7 @@ export const generateProjects = () => {
         data-aos-offset="120"
         data-aos-duration="600"
         data-aos-easing="ease-in-out-sine"
-        data-aos-once="false"
+        data-aos-once="true"
         >
           <div class="img-container d-flex align-items-center justify-content-center">
             <img src= ${project.image} class="img-fluid" alt= ${project.imgAlt}>
