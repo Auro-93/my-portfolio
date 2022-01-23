@@ -77,23 +77,27 @@
     }
 
     .description-container {
+      padding: 4rem 2rem;
       flex: 1;
-      padding: 2rem;
       background-color: var(--light-custom);
       text-align: center;
+
+      @include lg {
+        padding: 2rem;
+      }
 
       h1 {
         font-size: 1.5rem;
         letter-spacing: 0.1rem;
         font-weight: 700;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
 
       a {
         display: inline-block;
         background-color: var(--accent-custom);
         padding: 0.5rem 1rem;
-        margin-top: 2rem;
+        margin-top: 3rem;
         color: white;
         font-weight: 400;
         box-shadow: 0 0 20px var(--accent-custom);
