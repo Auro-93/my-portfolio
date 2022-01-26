@@ -28,7 +28,7 @@ export const generateSkills = () => {
             <p class="card-text">${skill.description}</p>
           </div>
           <div class="card-footer d-flex justify-content-end">
-            <a href=${skill.link}>Learn More</a>
+            <a href=${skill.link} target="_blank">Learn More</a>
           
           </div>
         </div>
