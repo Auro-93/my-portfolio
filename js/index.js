@@ -4,6 +4,7 @@ import { codeIconAnim } from "./add-animations.js";
 import { touchProjectEffect } from "./touchEvents.js";
 import { generateProjects } from "./generateProjectEl.js";
 import { generateSkills } from "./generateSkillEl.js";
+import { sendEmail } from "./email-service.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   generateSkills();
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleMenu();
   codeIconAnim();
   touchProjectEffect();
+  sendEmail();
 
   //AOS SCROLL ANIMATIONS CONFIG
   AOS.init({

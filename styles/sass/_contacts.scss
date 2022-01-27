@@ -27,9 +27,110 @@
     margin: 6rem 0 0;
     border: 2px solid var(--accent-custom);
     box-shadow: 0 0 30px var(--accent-custom);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include lg {
+      flex-direction: row;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 0 3rem;
+      width: 90%;
+
+      @include lg {
+        padding: 2rem 3rem;
+        flex: 2;
+        width: auto;
+      }
+
+      label {
+        color: var(--accent-custom);
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="message"],
+      textarea {
+        background-color: rgba(255, 255, 255, 0.08);
+        outline: none;
+        box-shadow: none;
+        border: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        transition: box-shadow 0.2s linear;
+      }
+
+      textarea {
+        margin-bottom: 2rem;
+      }
+
+      input:focus,
+      textarea:focus {
+        background-color: transparent;
+        box-shadow: 0 2px 2px var(--accent-custom);
+      }
+
+      .submit-button {
+        background-color: var(--accent-custom);
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s linear;
+
+        @include lg {
+          width: 40%;
+        }
+
+        &:hover,
+        &:active {
+          filter: brightness(70%);
+        }
+      }
+
+      .message {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+
+        @include lg {
+          text-align: left;
+        }
+      }
+
+      .success-message {
+        color: rgb(57, 172, 57);
+      }
+
+      .error-message {
+        color: red;
+      }
+    }
 
     ul {
       padding: 0;
+
+      @include lg {
+        flex: 1;
+      }
 
       li {
         padding: 1.5rem 0rem;
@@ -43,11 +144,6 @@
           padding: 1rem 3rem;
           flex-direction: row;
           justify-content: space-between;
-        }
-
-        address {
-          padding: 0;
-          margin: 0;
         }
 
         i {

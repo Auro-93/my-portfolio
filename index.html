@@ -217,21 +217,26 @@
       
     
         <div 
-          class="contact-tab-container social-contact col-12 col-md-10 col-lg-6" 
+          class="contact-tab-container social-contact col-12 col-md-10" 
           data-aos="fade-up"
           data-aos-offset="120"
           data-aos-duration="600"
           data-aos-easing="ease-in-out-sine"
           data-aos-once="false"
         >
-          <ul>
-            <li>
-              <address>
-                <a href="mailto:93a.sirigu@gmail.com">93a.sirigu@gmail.com</a>
-              </address>
-              <i class="far fa-2x fa-envelope"></i>  
-            </li>
 
+          <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <label>Name</label>
+            <input type="text" name="user_name" data-input>
+            <label>Email</label>
+            <input type="email" name="user_email" autocorrect="off" autocomplete="off" spellcheck="false" data-input>
+            <label>Message</label>
+            <textarea name="message" data-input></textarea>
+            <button class = "submit-button" type="submit">Send</button>
+            <div class = "message"></div>
+          </form>
+          <ul>
             <li>
               <a href="https://github.com/Auro-93" target="_blank">Github</a>
               <i class="fab fa-2x fa-github"></i>
@@ -267,6 +272,9 @@
    
     <!--AOS animations library ---->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!--EMAIL.JS CDN-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
  
     <!--Custom JS-->
     <script type = "module" src="js/index.js"></script>
