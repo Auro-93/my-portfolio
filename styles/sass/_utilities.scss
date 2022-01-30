@@ -82,7 +82,8 @@ html {
 //CHANGE COLOR OF THE HIGHLIGHTED TEXT
 
 ::selection {
-  background-color: var(--bg-custom);
+  background-color: var(--accent-custom);
+  color: white;
 }
 
 //SWITCH THEME CHECKBOX
