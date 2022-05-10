@@ -1,11 +1,5 @@
 export const skills = [
   {
-    name: "Figma",
-    description: `To precisely design projects according to your style desires`,
-    icons: [{ path: "assets/images/figma-icon.png", alt: "figma icon" }],
-    link: "https://www.figma.com/ui-design-tool/",
-  },
-  {
     name: "HTML",
     description: `To make your website SEO-responsive and accessible`,
     icons: [{ path: "assets/images/html5-icon.png", alt: "html icon" }],
@@ -43,5 +37,14 @@ export const skills = [
       { path: "assets/images/nodejs-icon.png", alt: "node.js icon" },
     ],
     link: "https://www.mongodb.com/mern-stack",
+  },
+  {
+    name: "MySQL/MongoDB",
+    description: `To manage your databases`,
+    icons: [
+      { path: "assets/images/mysql.png", alt: "MySQL icon" },
+      { path: "assets/images/mongodb.png", alt: "mongoDB icon" },
+    ],
+    link: "https://www.ibm.com/cloud/blog/mysql-vs-mongodb#:~:text=MongoDB%20is%20a%20document%2Dbased,open%2Dsource%20relational%20database).",
   },
 ];
